@@ -1,36 +1,35 @@
-// Calculator function
+
 function calculator(num1, num2, operator) {
   let result;
 
-  // Use a switch statement to handle different operators
   switch (operator) {
       case '+':
-          result = num1 + num2; // Addition
+          result = num1 + num2; 
           break;
       case '-':
-          result = num1 - num2; // Subtraction
+          result = num1 - num2;
           break;
       case '*':
-          result = num1 * num2; // Multiplication
+          result = num1 * num2; 
           break;
       case '/':
-          // Check if dividing by zero
+        
           if (num2 === 0) {
               return "Error: Division by zero is not allowed.";
           }
-          result = num1 / num2; // Division
+          result = num1 / num2;
           break;
       default:
           return "Error: Invalid operator. Please use +, -, *, or /.";
   }
 
-  return result; // Return the calculated result
+  return result;
 }
 
-// Example usage
-console.log(calculator(10, 5, '+')); // Output: 15
-console.log(calculator(10, 5, '-')); // Output: 5
-console.log(calculator(10, 5, '*')); // Output: 50
-console.log(calculator(10, 5, '/')); // Output: 2
-console.log(calculator(10, 0, '/')); // Output: Error: Division by zero is not allowed.
-console.log(calculator(10, 5, '%')); // Output: Error: Invalid operator. Please use +, -, *, or /.
+
+console.log(calculator(10, 5, '+')); 
+console.log(calculator(10, 5, '-')); 
+console.log(calculator(10, 5, '*')); 
+console.log(calculator(10, 5, '/'));
+console.log(calculator(10, 0, '/')); 
+console.log(calculator(10, 5, '%')); 
